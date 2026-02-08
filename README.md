@@ -54,7 +54,7 @@
 ### 1. Клонирование репозитория
 
 ```bash
-git clone <repository_url>
+git clone https://github.com/thekhabaroff/TGMailBot
 cd tgmailbot
 ```
 
@@ -74,8 +74,8 @@ source venv/bin/activate
 
 ```bash
 # Убедитесь, что venv активирован (должна быть префикс (venv) в командной строке)
-pip install --upgrade pip
-pip install -r requirements.txt
+pip3 install --upgrade pip
+pip2 install -r requirements.txt
 ```
 
 ### 3. Настройка окружения
