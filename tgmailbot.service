@@ -1,0 +1,31 @@
+[Unit]
+Description=Telegram Mail Bot
+After=network.target postgresql.service
+Wants=postgresql.service
+
+[Service]
+Type=simple
+User=tgmailbot
+Group=tgmailbot
+WorkingDirectory=/home/tgmailbot/tgmailbot
+Environment="PATH=/home/tgmailbot/tgmailbot/venv/bin:/usr/local/bin:/usr/bin:/bin"
+Environment="PYTHONUNBUFFERED=1"
+
+# Запуск бота через интерпретатор из venv
+ExecStart=/home/tgmailbot/tgmailbot/venv/bin/python /home/tgmailbot/tgmailbot/main.py
+
+# Перезапуск при ошибках
+Restart=always
+RestartSec=10
+
+# Логирование
+StandardOutput=append:/var/log/tgmailbot/out.log
+StandardError=append:/var/log/tgmailbot/error.log
+SyslogIdentifier=tgmailbot
+
+# Ограничения ресурсов (опционально)
+LimitNOFILE=65536
+MemoryMax=512M
+
+[Install]
+WantedBy=multi-user.target
