@@ -54,8 +54,8 @@
 ### 1. Клонирование репозитория
 
 ```bash
-git clone https://github.com/thekhabaroff/TGMailBot
-cd tgmailbot
+git clone https://github.com/thekhabaroff/MailBot
+cd mailbot
 ```
 
 ### 2. Создание виртуального окружения
@@ -75,7 +75,7 @@ source venv/bin/activate
 ```bash
 # Убедитесь, что venv активирован (должна быть префикс (venv) в командной строке)
 pip3 install --upgrade pip
-pip2 install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 
 ### 3. Настройка окружения
@@ -101,13 +101,13 @@ BROADCAST_THROTTLE=25
 source venv/bin/activate
 
 # Запуск бота через интерпретатор из venv
-venv/bin/python main.py
+venv/bin/python3 main.py
 ```
 
 Или если venv активирован:
 
 ```bash
-python main.py
+python3 main.py
 ```
 
 **Готово!** 🎉 Бот запущен и готов к работе.
@@ -141,8 +141,8 @@ python main.py
    source venv/bin/activate
    
    # Устанавливаем зависимости
-   pip install --upgrade pip
-   pip install -r requirements.txt
+   pip3 install --upgrade pip
+   pip3 install -r requirements.txt
    ```
 
 3. **Настройте базу данных**
