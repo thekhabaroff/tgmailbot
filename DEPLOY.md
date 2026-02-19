@@ -111,7 +111,7 @@ cd /home/tgmailbot
 
 ```bash
 # Если используете Git
-git clone <your-repository-url> tgmailbot
+git clone https://github.com/thekhabaroff/tgmailbot
 cd tgmailbot
 
 # Или загрузите код другим способом
@@ -133,8 +133,8 @@ source venv/bin/activate
 
 ```bash
 # Убедитесь, что venv активирован (должна быть префикс (venv) в командной строке)
-pip install --upgrade pip
-pip install -r requirements.txt
+pip3 install --upgrade pip
+pip3 install -r requirements.txt
 ```
 
 ### 5. Создание файла `.env`
