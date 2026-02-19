@@ -54,8 +54,8 @@
 ### 1. Клонирование репозитория
 
 ```bash
-git clone https://github.com/thekhabaroff/MailBot
-cd mailbot
+git clone https://github.com/thekhabaroff/tgmailbot
+cd tgmailbot
 ```
 
 ### 2. Создание виртуального окружения
@@ -128,7 +128,7 @@ python3 main.py
 
    Проверьте версию:
    ```bash
-   python --version
+   python3 --version
    ```
 
 2. **Создайте виртуальное окружение и установите зависимости**
